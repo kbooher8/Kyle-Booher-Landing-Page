@@ -1,0 +1,108 @@
+
+
+html{
+  background:url(https://imgnooz.com/sites/default/files/wallpaper/animals/55969/little-kitten-wallpapers-55969-6866064.jpg) no-repeat center fixed ;
+  background-size: cover;
+  width:100%;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: auto;
+  grid-template-areas:
+    "header header header"
+    "left middle right";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.item-1{
+  grid-area: header;
+  border:1px solid black;
+}
+
+.item-1 ul {
+  padding:1% 1% 1% 10%;
+  margin: 0;
+}
+
+.item-1 ul li {
+  display: inline-block;
+  width:24%;
+  font-size:28px;
+  letter-spacing:3px;
+  color: red;
+}
+
+/*left section styling*/
+.item-2{
+  grid-area: left;
+  height:600px;
+  text-align:center;
+  border:1px solid black;
+}
+  
+.item-2 h2 {
+  width:90%;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  margin-left:auto;
+  margin-right: auto;
+  border:1px solid black;
+  color: orange;
+  font-size: 28px;
+}
+ 
+.item-2 img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  padding: 50px 20px
+}
+
+.item-2 li {
+  width: 75%;
+  margin-left: auto;
+  Margin-right: auto;
+  font-size: 21px;
+  border:1px solid black;
+}
+
+.item-3{
+  grid-area: middle;
+  height:600px;
+  text-align:center;
+
+}
+
+.item-4{
+  grid-area: right;
+  height: 600px;
+  border:1px solid black;
+  text-align:center;
+  font-size: 24px
+}
+
+.item-4 p {
+  width:90%;
+  text-align: center;
+  padding: 50px 10px 50px 10px;
+  margin-left:auto;
+  margin-right: auto;
+  border:1px solid black;
+  grid-area: right;
+  border:1px solid black;
+ 
+}
+
+.item-4 li {
+  width: 75%;
+  margin-left: auto;
+  Margin-right: auto;
+  font-size: 21px;
+  border:1px solid black;
+  
+}
